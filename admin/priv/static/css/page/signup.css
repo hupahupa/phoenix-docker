@@ -1,0 +1,31 @@
+.creator-signup {
+  width: 580px;
+  margin: 7% auto;
+  text-align: center; }
+  .creator-signup .box-body {
+    padding: 40px;
+    background: #fff; }
+  .creator-signup .title {
+    margin-bottom: 20px; }
+  .creator-signup .description {
+    margin-bottom: 40px; }
+  .creator-signup .social-buttons {
+    margin-bottom: 30px; }
+    .creator-signup .social-buttons .btn {
+      border: none;
+      padding: 0;
+      line-height: 60px;
+      font-size: 20px; }
+    .creator-signup .social-buttons .fa {
+      vertical-align: middle; }
+      .creator-signup .social-buttons .fa:before {
+        margin-right: 20px;
+        font-size: 40px; }
+  .creator-signup .have-account {
+    text-decoration: none;
+    color: #333; }
+    .creator-signup .have-account:hover {
+      text-decoration: underline; }
+  .creator-signup .company-name {
+    font-weight: bold;
+    color: #888; }

@@ -1,0 +1,53 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-less": "^3.3.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-sass": "^2.3.2",
+    "node-dir": "^0.1.15",
+    "nunjucks": "^2.5.2",
+    "run-sequence": "^1.2.2"
+  },
+  "gulpConfig": {
+    "sourceDir": "web/static/",
+    "destinationDir": "priv/static/",
+    "sourcesPaths": {
+      "base-style": "base-style/less/",
+      "skins": "base-style/less/skins/",
+      "css": "css/",
+      "js": "js/",
+      "scss": "scss/",
+      "vendor": "vendor/",
+      "fonts": "fonts/*",
+      "image": "images/"
+    },
+    "destinationPaths": {
+      "base-style": "css/",
+      "skins": "css/skins/",
+      "css": "css/",
+      "js": "js/",
+      "scss": "css/",
+      "vendor": "vendor/",
+      "fonts": "fonts/",
+      "image": "images/"
+    },
+    "custom": {
+      "bower_components/jquery/dist/jquery.min.js": "lib/js/",
+      "bower_components/font-awesome/fonts/*": "lib/fonts/",
+      "bower_components/font-awesome/css/font-awesome.min.css": "lib/css/",
+      "bower_components/bootstrap/dist/css/bootstrap.min.css": "lib/css/",
+      "bower_components/bootstrap/dist/js/bootstrap.min.js": "lib/js/",
+      "bower_components//bootstrap/dist/fonts/*": "lib/fonts/"
+    }
+  }
+}

@@ -1,0 +1,229 @@
+$text-color: #666;
+$active-text: #4E92DF;
+$white: #fff;
+$sn-item-height: 50px;
+
+
+.setting{
+    overflow-y: auto;
+    min-height: 100%;
+
+    .setting-nav{
+        background-color: #EDECEC;
+        padding-top: 20px;
+        min-height: 100%;
+
+        .sidebar{
+            text-transform: uppercase;
+            list-style: none;
+            padding: 0;
+
+
+                li{
+                    a{
+                        display: block;
+                        padding: 12px 20px;
+                        color: $text-color;
+                        font-weight: bold;
+
+                        &:hover{
+                            color: $active-text;
+                        }
+                    }
+                }
+
+                .active{
+                    a{
+                        color: $active-text;
+                        background-color: #EDECEC;
+                    }
+                }
+        }
+    }
+
+    .setting-content{
+        background-color: #F7F7F7;
+        padding-top: 40px;
+        min-height: 100%;
+
+        textarea{
+            height: 150px;
+        }
+
+        .avatar{
+            width: 200px;
+            height: 200px;
+            background-color: $white;
+        }
+
+        .social-accounts{
+            .social-network{
+                margin-top: 20px;
+
+                >*{
+                    float: left;
+                }
+                &:after{
+                    content: " ";
+                    display: table;
+                    clear: both;
+                }
+
+
+                .ava-social{
+                    width: $sn-item-height;
+                    height: $sn-item-height;
+                    border: solid 1px #fff;
+                    box-shadow: 0 0 4px #888;
+                    font-size: 36px;
+                    line-height: $sn-item-height;
+
+                    &:not(:first-child){
+                        margin-left: 15px;
+                    }
+                }
+
+                .info{
+                    padding: 10px 0 0 20px;
+                    height: $sn-item-height;
+                }
+            }
+        }
+    }
+
+    .setting-referral{
+        .banner{
+            text-align: center;
+            padding: 30px 50px;
+            background-color: $active-text;
+            color: $white;
+
+            .title{
+                font-weight: bold;
+            }
+
+            .referral-link{
+                color: yellow;
+                font-weight: bold;
+            }
+        }
+        .share-link{
+            background-color: $white;
+            padding: 10px;
+            text-align: center;
+            .link-prefix{
+                color: $active-text;
+                font-weight: bold;
+            }
+            .custom-link{
+                padding: 6px 12px;
+                margin: 0 10px;
+                vertical-align: middle;
+            }
+        }
+        .point-row{
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+
+            .point{
+                font-size: inherit;
+                font-weight: bold;
+                color: $active-text;
+            }
+        }
+        .referral-users{
+            padding: 0;
+
+            .table{
+                thead th{
+                    text-transform: uppercase;;
+                }
+                tr{
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    .setting-history{
+        padding-top: 20px;
+        .chanel-list{
+            >*{
+                float: left;
+            }
+
+            &:after{
+                content: " ";
+                display: table;
+                clear: both;
+            }
+
+            .chanel{
+                padding: 6px 20px;
+
+                a{
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    color: $text-color;
+
+                    .ava-social{
+                        width: 24px;
+                        height: 24px;
+                        line-height: 24px;
+                    }
+
+                }
+
+            }
+            .active{
+                border-bottom: solid 1px;
+                border-color: $active-text;
+                a{
+                    color: $active-text;
+                }
+            }
+        }
+    }
+
+    .setting-notification{
+        label{
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .desc{
+            padding-left: 30px;
+            margin-top: 0px;
+        }
+    }
+
+    .setting-payment{
+        .section-title{
+            margin-left: 20px;
+            margin-top: 30px;
+            padding: 6px 0;
+            width: 140px;
+            border-bottom: solid 1px #ddd;
+        }
+    }
+}
+
+.empty-page{
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.form-group{
+    label{
+        font-weight: normal;
+    }
+
+    .desc{
+        margin-top: 5px;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+}

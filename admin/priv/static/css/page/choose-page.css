@@ -1,0 +1,44 @@
+.choose-page {
+  width: 580px;
+  margin: 7% auto;
+  text-align: center;
+  color: #5A6779; }
+  .choose-page .box-body {
+    padding: 40px;
+    padding-top: 25px;
+    background: #fff; }
+  .choose-page .logo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 34px; }
+  .choose-page .title {
+    font-size: 26px; }
+  .choose-page .description {
+    margin-bottom: 20px;
+    font-weight: bold; }
+  .choose-page .chanel-list {
+    margin-bottom: 30px;
+    padding: 0 40px; }
+    .choose-page .chanel-list .chanel > * {
+      float: left; }
+    .choose-page .chanel-list .chanel:not(:first-child) {
+      margin-top: 15px; }
+    .choose-page .chanel-list .chanel:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .choose-page .chanel-list .chanel .avatar img {
+      width: 64px;
+      height: 64px; }
+    .choose-page .chanel-list .chanel .info {
+      text-align: left;
+      padding: 12px 0 12px 25px;
+      height: 64px; }
+  .choose-page .have-account {
+    text-decoration: none;
+    color: #333; }
+    .choose-page .have-account:hover {
+      text-decoration: underline; }
+  .choose-page .company-name {
+    font-weight: bold;
+    color: #5A6779; }

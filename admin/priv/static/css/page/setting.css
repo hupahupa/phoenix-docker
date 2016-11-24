@@ -1,0 +1,134 @@
+.setting {
+  overflow-y: auto;
+  min-height: 100%; }
+  .setting .setting-nav {
+    background-color: #EDECEC;
+    padding-top: 20px;
+    min-height: 100%; }
+    .setting .setting-nav .sidebar {
+      text-transform: uppercase;
+      list-style: none;
+      padding: 0; }
+      .setting .setting-nav .sidebar li a {
+        display: block;
+        padding: 12px 20px;
+        color: #666;
+        font-weight: bold; }
+        .setting .setting-nav .sidebar li a:hover {
+          color: #4E92DF; }
+      .setting .setting-nav .sidebar .active a {
+        color: #4E92DF;
+        background-color: #EDECEC; }
+  .setting .setting-content {
+    background-color: #F7F7F7;
+    padding-top: 40px;
+    min-height: 100%; }
+    .setting .setting-content textarea {
+      height: 150px; }
+    .setting .setting-content .avatar {
+      width: 200px;
+      height: 200px;
+      background-color: #fff; }
+    .setting .setting-content .social-accounts .social-network {
+      margin-top: 20px; }
+      .setting .setting-content .social-accounts .social-network > * {
+        float: left; }
+      .setting .setting-content .social-accounts .social-network:after {
+        content: " ";
+        display: table;
+        clear: both; }
+      .setting .setting-content .social-accounts .social-network .ava-social {
+        width: 50px;
+        height: 50px;
+        border: solid 1px #fff;
+        box-shadow: 0 0 4px #888;
+        font-size: 36px;
+        line-height: 50px; }
+        .setting .setting-content .social-accounts .social-network .ava-social:not(:first-child) {
+          margin-left: 15px; }
+      .setting .setting-content .social-accounts .social-network .info {
+        padding: 10px 0 0 20px;
+        height: 50px; }
+  .setting .setting-referral .banner {
+    text-align: center;
+    padding: 30px 50px;
+    background-color: #4E92DF;
+    color: #fff; }
+    .setting .setting-referral .banner .title {
+      font-weight: bold; }
+    .setting .setting-referral .banner .referral-link {
+      color: yellow;
+      font-weight: bold; }
+  .setting .setting-referral .share-link {
+    background-color: #fff;
+    padding: 10px;
+    text-align: center; }
+    .setting .setting-referral .share-link .link-prefix {
+      color: #4E92DF;
+      font-weight: bold; }
+    .setting .setting-referral .share-link .custom-link {
+      padding: 6px 12px;
+      margin: 0 10px;
+      vertical-align: middle; }
+  .setting .setting-referral .point-row {
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 24px; }
+    .setting .setting-referral .point-row .point {
+      font-size: inherit;
+      font-weight: bold;
+      color: #4E92DF; }
+  .setting .setting-referral .referral-users {
+    padding: 0; }
+    .setting .setting-referral .referral-users .table thead th {
+      text-transform: uppercase; }
+    .setting .setting-referral .referral-users .table tr {
+      background-color: #fff; }
+  .setting .setting-history {
+    padding-top: 20px; }
+    .setting .setting-history .chanel-list > * {
+      float: left; }
+    .setting .setting-history .chanel-list:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .setting .setting-history .chanel-list .chanel {
+      padding: 6px 20px; }
+      .setting .setting-history .chanel-list .chanel a {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #666; }
+        .setting .setting-history .chanel-list .chanel a .ava-social {
+          width: 24px;
+          height: 24px;
+          line-height: 24px; }
+    .setting .setting-history .chanel-list .active {
+      border-bottom: solid 1px;
+      border-color: #4E92DF; }
+      .setting .setting-history .chanel-list .active a {
+        color: #4E92DF; }
+  .setting .setting-notification label {
+    font-weight: bold;
+    margin-bottom: 0px; }
+  .setting .setting-notification .desc {
+    padding-left: 30px;
+    margin-top: 0px; }
+  .setting .setting-payment .section-title {
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 6px 0;
+    width: 140px;
+    border-bottom: solid 1px #ddd; }
+
+.empty-page {
+  text-align: center;
+  padding-top: 20px; }
+
+.form-group label {
+  font-weight: normal; }
+
+.form-group .desc {
+  margin-top: 5px; }
+
+.form-group .bold {
+  font-weight: bold; }

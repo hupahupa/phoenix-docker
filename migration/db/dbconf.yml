@@ -1,0 +1,7 @@
+development:
+    driver: postgres
+    open: host=postgresql user=$POSTGRES_USER dbname=$POSTGRES_DBNAME password=$POSTGRES_PASSWORD sslmode=disable
+
+production:
+    driver: postgres
+    open: host=postgresql user=$POSTGRES_USER dbname=$POSTGRES_DBNAME password=$POSTGRES_PASSWORD sslmode=disable

@@ -1,0 +1,44 @@
+version: '2'
+services:
+    site:
+        environment:
+            POSTGRES_USER: myapp
+            POSTGRES_PASSWORD: myapp
+            POSTGRES_HOST: postgresql
+        volumes:
+            - ./site/config/:/app/config/
+            - ./site/web/:/app/web/
+            - ./site/priv/static/:/app/priv/static/
+    admin:
+        environment:
+            POSTGRES_USER: myapp
+            POSTGRES_PASSWORD: myapp
+            POSTGRES_HOST: postgresql
+        volumes:
+            - ./admin/config/:/app/config/
+            - ./admin/web/:/app/web/
+            - ./admin/priv/static/:/app/priv/static/
+
+    postgresql:
+        environment:
+            POSTGRES_USER: myapp
+            POSTGRES_PASSWORD: myapp
+        volumes:
+            - ./database/local:/var/lib/postgresql
+
+    migration:
+        environment:
+            POSTGRES_USER: myapp
+            POSTGRES_PASSWORD: myapp
+    # redis:
+    #     image: redis:3.2
+    #     restart: always
+    #     ports:
+    #         - "6379"
+
+    # elasticsearch:
+    #     image: elasticsearch:5
+    #     restart: always
+    #     ports:
+    #         - "9200"
+    #         - "9300"

@@ -1,0 +1,61 @@
+version: '2'
+services:
+    site:
+        build: ./site
+        restart: always
+        links:
+            - postgresql
+        depends_on:
+            - postgresql
+        ports:
+            - "5000"
+
+    admin:
+        build: ./admin
+        restart: always
+        links:
+            - postgresql
+        depends_on:
+            - postgresql
+        ports:
+            - "6000"
+
+    postgresql:
+        image: postgres:9.5
+        restart: always
+        ports:
+            - "5432"
+
+    nginx:
+        build: ./nginx
+        restart: always
+        links:
+            - "site:site"
+            - "admin:admin"
+        volumes:
+            - /www/static
+        ports:
+            - "80:80"
+            - "6000:6000"
+
+    migration:
+        build: ./migration
+        environment:
+            MIGRATE: $MIGRATE
+        links:
+            - postgresql
+        depends_on:
+            - postgresql
+
+    # redis:
+    #     image: redis:3.2
+    #     restart: always
+    #     ports:
+    #         - "6379"
+
+    # elasticsearch:
+    #     image: elasticsearch:5
+    #     restart: always
+    #     ports:
+    #         - "9200"
+    #         - "9300"

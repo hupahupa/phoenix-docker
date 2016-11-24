@@ -1,0 +1,207 @@
+.sponsorship .toolbar {
+  background: #fff;
+  padding: 15px; }
+  .sponsorship .toolbar .nav {
+    margin-left: 30px; }
+    .sponsorship .toolbar .nav li.active a {
+      color: #4E92DF;
+      border-bottom: solid 1px #4E92DF; }
+    .sponsorship .toolbar .nav li a {
+      text-transform: uppercase;
+      color: #666;
+      font-weight: bold;
+      padding: 6px 12px; }
+      .sponsorship .toolbar .nav li a:hover {
+        background: none; }
+  .sponsorship .toolbar .filters {
+    margin-right: 30px; }
+    .sponsorship .toolbar .filters .btn {
+      background-color: #fff; }
+    .sponsorship .toolbar .filters .dropdown {
+      display: inline-block; }
+      .sponsorship .toolbar .filters .dropdown ul li {
+        position: relative; }
+        .sponsorship .toolbar .filters .dropdown ul li a {
+          padding: 6px 20px; }
+      .sponsorship .toolbar .filters .dropdown .ava-social {
+        position: absolute;
+        top: 6px;
+        right: 20px;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px; }
+
+.sponsorship .sponsorships {
+  float: left;
+  width: 100%;
+  padding: 20px 35px; }
+  .sponsorship .sponsorships .masonry {
+    -moz-column-gap: 1.5em;
+    -webkit-column-gap: 1.5em;
+    column-gap: 1.5em; }
+  .sponsorship .sponsorships .item {
+    border: none;
+    display: inline-block;
+    width: 100%; }
+    .sponsorship .sponsorships .item .box-header {
+      padding: 0; }
+      .sponsorship .sponsorships .item .box-header .feature-image {
+        max-width: 100%; }
+    .sponsorship .sponsorships .item .box-body {
+      padding: 15px; }
+      .sponsorship .sponsorships .item .box-body .title {
+        font-size: 1.2em;
+        font-weight: bold; }
+    .sponsorship .sponsorships .item .box-footer {
+      padding: 15px; }
+      .sponsorship .sponsorships .item .box-footer .btn {
+        border: none; }
+    .sponsorship .sponsorships .item .channels {
+      margin: 10px 0; }
+      .sponsorship .sponsorships .item .channels .ava-social {
+        width: 28px;
+        height: 28px;
+        line-height: 28px; }
+
+.sponsorship .invitations {
+  padding: 30px 70px; }
+  .sponsorship .invitations .welcome-page .banner {
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 30px 20px; }
+  .sponsorship .invitations .benefits .benefit {
+    margin-top: 15px; }
+    .sponsorship .invitations .benefits .benefit .icon img {
+      width: 96px;
+      height: 96px; }
+    .sponsorship .invitations .benefits .benefit > * {
+      float: left; }
+    .sponsorship .invitations .benefits .benefit:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .sponsorship .invitations .benefits .benefit .details {
+      padding-left: 20px;
+      padding-top: 20px; }
+      .sponsorship .invitations .benefits .benefit .details .title {
+        font-weight: bold;
+        font-size: 1.5em; }
+
+@media only screen and (min-width: 400px) {
+  .masonry {
+    -moz-column-count: 1;
+    -webkit-column-count: 1;
+    column-count: 1; } }
+
+@media only screen and (min-width: 700px) {
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 2; } }
+
+@media only screen and (min-width: 1100px) {
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3; } }
+
+.campaign-detail {
+  width: 800px;
+  background: #fff;
+  margin: 20px auto;
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  align-content: stretch; }
+  .campaign-detail .panel-left {
+    width: 33.33%;
+    background-color: #4E92DF;
+    text-align: center;
+    padding: 40px 30px;
+    color: #fff; }
+    .campaign-detail .panel-left .product-image {
+      position: relative;
+      width: 96px;
+      height: 96px;
+      overflow: hidden;
+      display: inline-block; }
+      .campaign-detail .panel-left .product-image img {
+        max-height: 96px; }
+    .campaign-detail .panel-left .product-name {
+      margin-top: 15px;
+      font-size: 1.3em; }
+    .campaign-detail .panel-left .brand {
+      margin: 15px 0; }
+  .campaign-detail .panel-right {
+    width: 66.67%;
+    height: 100%;
+    padding: 50px 30px 30px;
+    position: relative; }
+    .campaign-detail .panel-right .brief {
+      border-bottom: solid 1px #ddd;
+      padding: 10px 0; }
+      .campaign-detail .panel-right .brief .headers, .campaign-detail .panel-right .brief .values {
+        padding: 0 15px;
+        font-weight: bold;
+        text-transform: uppercase; }
+        .campaign-detail .panel-right .brief .headers div, .campaign-detail .panel-right .brief .values div {
+          padding: 0;
+          text-align: center; }
+        .campaign-detail .panel-right .brief .headers > div:first-child, .campaign-detail .panel-right .brief .values > div:first-child {
+          text-align: left; }
+        .campaign-detail .panel-right .brief .headers > div:last-child, .campaign-detail .panel-right .brief .values > div:last-child {
+          text-align: right; }
+      .campaign-detail .panel-right .brief .values {
+        margin-top: 7px; }
+        .campaign-detail .panel-right .brief .values .ava-social {
+          width: 30px;
+          height: 30px;
+          line-height: 30px;
+          vertical-align: middle; }
+        .campaign-detail .panel-right .brief .values .channels {
+          padding: 3px 0; }
+        .campaign-detail .panel-right .brief .values .price, .campaign-detail .panel-right .brief .values .deadline {
+          color: #4E92DF;
+          font-size: 2em;
+          font-weight: normal; }
+    .campaign-detail .panel-right .sites {
+      margin-top: 20px;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .campaign-detail .panel-right .desc {
+      white-space: pre-wrap;
+      word-wrap: break-word; }
+
+.proposal {
+  width: 600px;
+  background-color: #fff;
+  padding: 15px; }
+  .proposal .box {
+    border: solid 1px #eee;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 0; }
+    .proposal .box .box-header {
+      text-align: center;
+      padding: 0; }
+      .proposal .box .box-header h3 {
+        font-weight: bold; }
+    .proposal .box .box-body {
+      padding: 0; }
+      .proposal .box .box-body .values > div {
+        margin-top: 10px; }
+      .proposal .box .box-body .values, .proposal .box .box-body .details {
+        padding: 0 30px 15px; }
+      .proposal .box .box-body .details textarea {
+        height: 170px; }
+      .proposal .box .box-body .ava-social {
+        width: 30px;
+        height: 30px;
+        line-height: 30px; }
+    .proposal .box .box-footer .form-group {
+      margin: 0; }
+    .proposal .box .input-group-btn .btn-default {
+      background-color: #fff; }

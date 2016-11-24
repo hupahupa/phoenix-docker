@@ -1,0 +1,53 @@
+$gray: #888;
+$black: #333;
+
+.creator-signup{
+    width: 580px;
+    margin: 7% auto;
+    text-align: center;
+
+    .box-body{
+        padding: 40px;
+        background: #fff;
+    }
+
+    .title{
+        margin-bottom: 20px;
+    }
+
+    .description{
+        margin-bottom: 40px;
+    }
+
+    .social-buttons{
+        margin-bottom: 30px;
+
+        .btn{
+            border: none;
+            padding: 0;
+            line-height: 60px;
+            font-size: 20px;
+        }
+        .fa{
+            vertical-align: middle;
+            &:before{
+                margin-right: 20px;
+                font-size: 40px;
+            }
+        }
+
+    }
+
+    .have-account{
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .company-name{
+        font-weight: bold;
+        color: $gray;
+    }
+}

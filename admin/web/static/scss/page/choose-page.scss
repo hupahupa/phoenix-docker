@@ -1,0 +1,76 @@
+$gray: #5A6779;
+$black: #333;
+
+.choose-page{
+    width: 580px;
+    margin: 7% auto;
+    text-align: center;
+    color: $gray;
+
+    .box-body{
+        padding: 40px;
+        padding-top: 25px;
+        background: #fff;
+    }
+
+    .logo{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 34px;
+    }
+
+    .title{
+        font-size: 26px;
+    }
+
+    .description{
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    .chanel-list{
+        margin-bottom: 30px;
+        padding: 0 40px;
+
+        .chanel{
+            &>*{
+                float: left;
+            }
+
+            &:not(:first-child){
+                margin-top: 15px;
+            }
+
+            &:after{
+                content: " ";
+                display: table;
+                clear: both;
+            }
+
+            .avatar img{
+                width: 64px;
+                height: 64px;
+            }
+
+            .info{
+                text-align: left;
+                padding: 12px 0 12px 25px;
+                height: 64px;
+            }
+        }
+
+    }
+
+    .have-account{
+        text-decoration: none;
+        color: $black;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .company-name{
+        font-weight: bold;
+        color: $gray;
+    }
+}
