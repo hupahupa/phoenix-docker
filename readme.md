@@ -33,8 +33,8 @@
 #### docker-compose
 - **Build again the services** `docker-compose -f docker-compose.yml -f docker-compose.local.yml build`
 - **Take all services up and run** `docker-compose -f docker-compose.yml -f docker-compose.local.yml up`
-- **Stop all docker-compose progress**
-- **Stop all services**
+- **Take all services up and run in background** `docker-compose -f docker-compose.yml -f docker-compose.local.yml up -d`
+- **Stop all docker-compose progress** `docker-compose stop`
 
 
 #### docker
